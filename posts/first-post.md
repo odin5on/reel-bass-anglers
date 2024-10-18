@@ -1,7 +1,7 @@
 ---
 title: "My First Topwater Smallmouth Bass: An Epic Day Fishing an Iowa River"
 publishedAt: 2024-10-11T21:12:19Z
-snippet: This is an excerpt of my first blog post.
+snippet: From topwater strikes to jigging through whitewater, this trip was unforgettable. I'll share what worked for me and throw in some tips on fishing a plopper-style bait and a jig.
 ---
 
 Growing up fishing small Iowa ponds, I rarely had the chance to fish for
@@ -42,7 +42,8 @@ into. It fought hard, and once I had it on the bank, I realized I'd caught my
 first smallmouth! I was thrilled that this new fishing spot had paid off and I
 had a new species in my hands.
 
-![Smallmouth bass caught in Iowa on a spook](IMG_1878.webp) _I was surprised by how big their tails are!_
+![Smallmouth bass caught in Iowa on a spook](IMG_1878.webp) _I was surprised by
+how big their tails are!_
 
 Catching fish in a new spot provides a thrill that I'll always seek. The
 topwater bite continued for a while until the sun was overhead, at which point I
@@ -51,7 +52,8 @@ retrieve in the eddies of the white water. I couldn't have asked for better
 fishing. In one of these eddies, I pulled out the biggest fish of the day—a nice
 ~2.5lb smallmouth.
 
-![Smallmouth bass caught in Iowa on a jig and craw soft plastic](IMG_3377.webp) _please pardon me posing like a fly fisherman_
+![Smallmouth bass caught in Iowa on a jig and craw soft plastic](IMG_3377.webp)
+_please pardon me posing like a fly fisherman_
 
 All in all, Will and I caught a combined 20+ fish, mostly smallmouth but a
 couple of largemouth and one walleye. It was a gorgeous day spent trekking up
