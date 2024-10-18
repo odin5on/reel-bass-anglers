@@ -3,6 +3,7 @@ import { Head } from "$fresh/runtime.ts";
 import { getPost } from "@/utils/posts.ts";
 import { Post } from "/types/Post.ts";
 import { CSS, render } from "$gfm";
+import Header from "/components/Header.tsx";
 
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
@@ -22,6 +23,7 @@ export default function PostPage(props: PageProps<Post>) {
       <Head>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
       </Head>
+      <Header />
       <main class="max-w-screen-md px-4 pt-16 mx-auto">
         <h1 class="text-5xl font-bold">{post.attrs.title}</h1>
         <time class="text-gray-500">

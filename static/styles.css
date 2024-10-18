@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  max-height: 1000px;
+  border-radius: 4px;
+}
+
+img + em {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  p img {
+    width: 90%;
+    max-height: 500px;
+  }
+
+  img + em {
+    width: 90%;
+  }
+}
