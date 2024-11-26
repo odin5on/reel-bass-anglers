@@ -4,6 +4,7 @@ import { getPost } from "@/utils/posts.ts";
 import { Post } from "/types/Post.ts";
 import { CSS, render } from "$gfm";
 import Header from "/components/Header.tsx";
+import Footer from "/components/Footer.tsx";
 
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
@@ -38,6 +39,7 @@ export default function PostPage(props: PageProps<Post>) {
           dangerouslySetInnerHTML={{ __html: render(post.body) }}
         />
       </main>
+      <Footer />
     </>
   );
 }
