@@ -4,14 +4,6 @@ import { Post, PostAttributes } from "/types/Post.ts";
 
 const DIRECTORY = "./posts";
 
-// export interface Post {
-//   slug: string;
-//   title: string;
-//   publishedAt: Date;
-//   snippet: string;
-//   content: string;
-// }
-
 // Get posts.
 export async function getPosts(): Promise<Post[]> {
   const files = Deno.readDir(DIRECTORY);

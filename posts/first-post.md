@@ -53,7 +53,7 @@ fishing. In one of these eddies, I pulled out the biggest fish of the day—a ni
 ~2.5lb smallmouth.
 
 ![Smallmouth bass caught in Iowa on a jig and craw soft plastic](IMG_3377.webp)
-_please pardon me posing like a fly fisherman_
+_Please pardon me posing like a fly fisherman_
 
 All in all, Will and I caught a combined 20+ fish, mostly smallmouth but a
 couple of largemouth and one walleye. It was a gorgeous day spent trekking up
