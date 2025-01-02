@@ -9,9 +9,9 @@ export const handler: Handlers<string> = {
 export default function Subscribe() {
   return (
     <>
-      <form method="post" action="/">
-        <button type="submit">Subscribe</button>
-        <input type="email" name="email" value="" class="border" />
+      <form method="post" action="/" class="border-black border-2 rounded-md flex">
+        <input type="email" name="email" value="" placeholder="Enter email" class="pl-2 focus:outline-none flex-grow" />
+        <button type="submit" class="bg-black text-white p-2 ml-2">Subscribe</button>
       </form>
     </>
   );
