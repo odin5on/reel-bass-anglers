@@ -53,7 +53,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       <Header />
       <main class="flex-grow-1 flex-shrink-0 flex-basis-auto max-w-screen-md p-4 sm:px-8 sm:pt-16 mx-auto">
         <h1 class="text-5xl font-bold">Reel Bass Anglers</h1>
-        <h3 class="text-2xl pt-4">Latest Posts:</h3>
+        <h3 class="text-2xl pt-4">Latest:</h3>
         <div class="mt-8">
           {posts.map((post) => <PostCard post={post} />)}
         </div>
