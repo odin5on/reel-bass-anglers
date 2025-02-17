@@ -12,7 +12,7 @@ export const handler: Handlers<Post[]> = {
     const posts = await getPosts();
     return ctx.render(posts);
   },
-  async POST(req, ctx) {
+  async POST(req, _ctx) {
     const form = await req.formData();
     const email = form.get("email")?.toString();
 
@@ -31,8 +31,7 @@ export const handler: Handlers<Post[]> = {
       },
     );
 
-    if(res.ok) {
-      const data = await res.json();
+    if (res.ok) {
       // Redirect user to thank you page.
       const headers = new Headers();
       headers.set("location", "/thanks-for-subscribing");
@@ -41,7 +40,7 @@ export const handler: Handlers<Post[]> = {
         headers,
       });
     } else {
-      return res
+      return res;
     }
   },
 };
@@ -66,7 +65,11 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
 function PostCard(props: { post: Post }) {
   const { post } = props;
   return (
-    <a class="sm:col-span-2" href={`/${post.slug}`}>
+    <a
+      class="sm:col-span-2 block text-decoration-none"
+      href={`/${post.slug}`}
+      aria-label={`Read full article: ${post.attrs.title}`}
+    >
       <div class="p-4 my-4 border rounded-[4px] transform transition-transform duration-300 hover:scale-105">
         <h3 class="text(3xl gray-900) font-bold">{post.attrs.title}</h3>
         <time class="text-gray-500">
@@ -77,6 +80,10 @@ function PostCard(props: { post: Post }) {
           })}
         </time>
         <div class="mt-4 text-gray-900">{post.attrs.snippet}</div>
+        <div class="mt-3 text-blue-600 font-medium hover:text-blue-800 transition-colors text-right">
+          Continue reading{" "}
+          <span class="sr-only">article "{post.attrs.title}"</span> →
+        </div>
       </div>
     </a>
   );
