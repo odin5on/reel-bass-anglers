@@ -42,8 +42,8 @@ into. It fought hard, and once I had it on the bank, I realized I'd caught my
 first smallmouth! I was thrilled that this new fishing spot had paid off and I
 had a new species in my hands.
 
-![Smallmouth bass caught in Iowa on a spook](IMG_1878.webp) _I was surprised by
-how big their tails are!_
+![Smallmouth bass caught in Iowa on a spook](/images/IMG_1878.webp) _I was
+surprised by how big their tails are!_
 
 Catching fish in a new spot provides a thrill that I'll always seek. The
 topwater bite continued for a while until the sun was overhead, at which point I
@@ -52,7 +52,7 @@ retrieve in the eddies of the white water. I couldn't have asked for better
 fishing. In one of these eddies, I pulled out the biggest fish of the day—a nice
 ~2.5lb smallmouth.
 
-![Smallmouth bass caught in Iowa on a jig and craw soft plastic](IMG_3377.webp)
+![Smallmouth bass caught in Iowa on a jig and craw soft plastic](/images/IMG_3377.webp)
 _Please pardon me posing like a fly fisherman_
 
 All in all, Will and I caught a combined 20+ fish, mostly smallmouth but a

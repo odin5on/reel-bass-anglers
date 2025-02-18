@@ -18,7 +18,7 @@ not catch anything. But I did, and I’ll be going back to this pond because I
 suspect there are some bigger fish hiding. But besides the fish, I had a good
 time. I got outside, walked around, and tried something new.
 
-![Largemouth bass caught on a spook](IMG_3541.webp)
+![Largemouth bass caught on a spook](/images/IMG_3541.webp)
 
 Now that there is snow on the ground and I’m cooped up inside, I would give
 anything to go back to those relatively warm late-season fishing days. I would
