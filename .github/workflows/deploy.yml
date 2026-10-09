@@ -32,9 +32,6 @@ jobs:
         with:
           deno-version: v2.x
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-
       - name: Build static site
         run: deno task pages
 
@@ -55,6 +52,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # The site is served from the domain root, so the build does not need
+      # the Pages base path. This step also fails until Pages is enabled,
+      # which would block pull-request builds if it ran there.
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
