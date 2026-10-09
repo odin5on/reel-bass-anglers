@@ -10,16 +10,16 @@ export const handler: Handlers<Post[]> = {
     const origin = url.origin;
     const copyright = `Copyright ${new Date().getFullYear()} ${origin}`;
     const feed = new Feed({
-      title: "Blog",
-      description: "This is a Fresh Blog",
-      id: `${origin}/blog`,
-      link: `${origin}/blog`,
+      title: "Reel Bass Anglers",
+      description: "Fishing notes from Reel Bass Anglers",
+      id: `${origin}/`,
+      link: `${origin}/`,
       language: "en",
       favicon: `${origin}/favicon.ico`,
       copyright: copyright,
       generator: "Feed (https://github.com/jpmonette/feed) for Deno",
       feedLinks: {
-        atom: `${origin}/feed`,
+        atom: `${origin}/feed.xml`,
       },
     });
 

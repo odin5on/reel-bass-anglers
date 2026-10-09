@@ -7,5 +7,7 @@
 
 # Fresh build directory
 _fresh/
+# Static site written for GitHub Pages
+_site/
 # npm dependencies
 node_modules/

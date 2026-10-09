@@ -3,45 +3,11 @@ import { getPosts } from "@/utils/posts.ts";
 import { Post } from "/types/Post.ts";
 import Header from "/components/Header.tsx";
 import Footer from "/components/Footer.tsx";
-import "@std/dotenv/load";
-
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
     const posts = await getPosts();
     return ctx.render(posts);
-  },
-  async POST(req, _ctx) {
-    const form = await req.formData();
-    const email = form.get("email")?.toString();
-
-    // Add email to list.
-    const res = await fetch(
-      "https://api.resend.com/audiences/7380c08d-501b-4942-82e7-61cc64afdfd6/contacts",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${RESEND_API_KEY}`,
-        },
-        body: JSON.stringify({
-          email: email,
-        }),
-      },
-    );
-
-    if (res.ok) {
-      // Redirect user to thank you page.
-      const headers = new Headers();
-      headers.set("location", "/thanks-for-subscribing");
-      return new Response(null, {
-        status: 303, // See Other
-        headers,
-      });
-    } else {
-      return res;
-    }
   },
 };
 
