@@ -7,6 +7,12 @@ export default function App({ Component }: PageProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Reel Bass Anglers</title>
         <link rel="stylesheet" href="/styles.css" />
+        <link
+          rel="alternate"
+          type="application/atom+xml"
+          title="Reel Bass Anglers"
+          href="/feed.xml"
+        />
       </head>
       <body class="flex flex-col h-full">
         <Component />
