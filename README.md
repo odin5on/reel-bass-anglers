@@ -34,6 +34,8 @@ The output includes:
 
 - `index.html`, `gallery/index.html`, and one directory per post
 - `feed.xml` (Atom)
+- `sitemap.xml` (home, gallery, and every post)
+- `robots.txt` (points crawlers at the sitemap)
 - `404.html`
 - files from `static/`, including images and the compiled `styles.css`
 - `CNAME` containing `reelbassanglers.com`, so the site is served from the
@@ -68,6 +70,17 @@ custom domain to `reelbassanglers.com`.
 The Atom feed is [`/feed.xml`](https://reelbassanglers.com/feed.xml). It used to
 be `/feed`. GitHub Pages chooses the content type from the file extension, and
 an extensionless `/feed` file would not be served as XML.
+
+## Sitemap
+
+The sitemap is [`/sitemap.xml`](https://reelbassanglers.com/sitemap.xml). It is
+regenerated on every `deno task pages` build with the home page, gallery, and
+each post. [`/robots.txt`](https://reelbassanglers.com/robots.txt) advertises
+that URL.
+
+After the first deploy that includes these files, submit
+`https://reelbassanglers.com/sitemap.xml` once in Google Search Console →
+Sitemaps. Google will re-fetch the same URL on later crawls as the site updates.
 
 ## Email subscription
 
