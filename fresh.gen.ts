@@ -8,6 +8,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $feed_xml from "./routes/feed.xml.ts";
 import * as $gallery from "./routes/gallery.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $sitemap_xml from "./routes/sitemap.xml.ts";
 
 import type { Manifest } from "$fresh/server.ts";
 
@@ -19,6 +20,7 @@ const manifest = {
     "./routes/feed.xml.ts": $feed_xml,
     "./routes/gallery.tsx": $gallery,
     "./routes/index.tsx": $index,
+    "./routes/sitemap.xml.ts": $sitemap_xml,
   },
   islands: {},
   baseUrl: import.meta.url,

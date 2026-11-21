@@ -152,6 +152,7 @@ for (
     "/",
     "/gallery",
     "/feed.xml",
+    "/sitemap.xml",
     ...posts.map((post) => `/${post.slug}`),
   ]
 ) {
@@ -218,6 +219,8 @@ const required = [
   "index.html",
   "gallery/index.html",
   "feed.xml",
+  "sitemap.xml",
+  "robots.txt",
   "404.html",
   "CNAME",
   ".nojekyll",
@@ -258,6 +261,28 @@ for (const post of posts) {
     console.error(`feed.xml is missing /${post.slug}`);
     Deno.exit(1);
   }
+}
+
+const sitemap = await Deno.readTextFile(join(outDir, "sitemap.xml"));
+if (
+  !sitemap.includes("<urlset") ||
+  !sitemap.includes(`${SITE_ORIGIN}/`) ||
+  !sitemap.includes(`${SITE_ORIGIN}/gallery`)
+) {
+  console.error("sitemap.xml is missing required URLs");
+  Deno.exit(1);
+}
+for (const post of posts) {
+  if (!sitemap.includes(`${SITE_ORIGIN}/${post.slug}`)) {
+    console.error(`sitemap.xml is missing /${post.slug}`);
+    Deno.exit(1);
+  }
+}
+
+const robots = await Deno.readTextFile(join(outDir, "robots.txt"));
+if (!robots.includes("Sitemap: https://reelbassanglers.com/sitemap.xml")) {
+  console.error("robots.txt is missing the sitemap directive");
+  Deno.exit(1);
 }
 
 const notFoundHtml = await Deno.readTextFile(join(outDir, "404.html"));
